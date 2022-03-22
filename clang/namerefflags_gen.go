@@ -18,7 +18,6 @@ const (
 	// parameters is used, or in C++ when using an operator:
 	//  [object doSomething:here withValue:there]; // Objective-C
 	//  return some_vector[1]; // C++
-
 	NameRange_WantSinglePiece = C.CXNameRange_WantSinglePiece
 )
 

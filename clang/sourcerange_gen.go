@@ -26,7 +26,7 @@ func (sr SourceRange) Equal(sr2 SourceRange) bool {
 	return o != C.uint(0)
 }
 
-// IsNull returns non-zero if \p range is null.
+// IsNull returns non-zero if range is null.
 func (sr SourceRange) IsNull() bool {
 	o := C.clang_Range_isNull(sr.c)
 

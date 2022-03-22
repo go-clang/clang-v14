@@ -27,7 +27,7 @@ func (tu TranslationUnit) IsFileMultipleIncludeGuarded(file File) bool {
 //
 // Parameter file_name the name of the file.
 //
-// Returns the file handle for the named file in the translation unit \p tu,
+// Returns the file handle for the named file in the translation unit tu,
 // or a NULL file handle if the file was not a part of this translation unit.
 func (tu TranslationUnit) File(fileName string) File {
 	c_fileName := C.CString(fileName)
@@ -178,7 +178,7 @@ func (tu TranslationUnit) DefaultReparseOptions() uint32 {
 //
 // This routine can be used to re-parse the source files that originally
 // created the given translation unit, for example because those source files
-// have changed (either on disk or as passed via \p unsaved_files). The
+// have changed (either on disk or as passed via unsaved_files). The
 // source code will be reparsed with the same command-line options as it
 // was originally parsed.
 //
@@ -387,7 +387,7 @@ func (tu TranslationUnit) DisposeTokens(tokens []Token) {
 // Parameter TU The translation unit in which code-completion should
 // occur. The source files for this translation unit need not be
 // completely up-to-date (and the contents of those source files may
-// be overridden via \p unsaved_files). Cursors referring into the
+// be overridden via unsaved_files). Cursors referring into the
 // translation unit may be invalidated by this invocation.
 //
 // Parameter complete_filename The name of the source file where code

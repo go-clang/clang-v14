@@ -46,7 +46,7 @@ func (c Cursor) Equal(c2 Cursor) bool {
 	return o != C.uint(0)
 }
 
-// IsNull returns non-zero if \p cursor is null.
+// IsNull returns non-zero if cursor is null.
 func (c Cursor) IsNull() bool {
 	o := C.clang_Cursor_isNull(c.c)
 
@@ -147,7 +147,7 @@ func (c Cursor) TranslationUnit() TranslationUnit {
 // GetCursorSemanticParent determine the semantic parent of the given cursor.
 //
 // The semantic parent of a cursor is the cursor that semantically contains
-// the given \p cursor. For many declarations, the lexical and semantic parents
+// the given cursor. For many declarations, the lexical and semantic parents
 // are equivalent (the lexical parent is returned by
 // clang_getCursorLexicalParent()). They diverge when declarations or
 // definitions are provided out-of-line. For example:
@@ -179,7 +179,7 @@ func (c Cursor) SemanticParent() Cursor {
 
 // GetCursorLexicalParent determine the lexical parent of the given cursor.
 //
-// The lexical parent of a cursor is the cursor in which the given \p cursor
+// The lexical parent of a cursor is the cursor in which the given cursor
 // was actually written. For many declarations, the lexical and semantic parents
 // are equivalent (the semantic parent is returned by
 // clang_getCursorSemanticParent()). They diverge when declarations or
@@ -251,7 +251,7 @@ func (c Cursor) LexicalParent() Cursor {
 //
 // Parameter num_overridden A pointer to the number of overridden
 // functions, will be set to the number of overridden functions in the
-// array pointed to by \p overridden.
+// array pointed to by overridden.
 func (c Cursor) OverriddenCursors() []Cursor {
 	var cp_overridden *C.CXCursor
 	var overridden []Cursor
@@ -1008,7 +1008,7 @@ func (c Cursor) CXXMethod_IsConst() bool {
 // declaration.
 //
 // Returns The cursor kind of the specializations that would be generated
-// by instantiating the template \p C. If \p C is not a template, returns
+// by instantiating the template C. If C is not a template, returns
 // CXCursor_NoDeclFound.
 func (c Cursor) TemplateCursorKind() CursorKind {
 	return CursorKind(C.clang_getTemplateCursorKind(c.c))

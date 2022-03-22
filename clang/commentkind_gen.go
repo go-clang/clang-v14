@@ -22,13 +22,11 @@ const (
 	//
 	// For example:
 	//  <br> <br /> <a href="http://example.org/">
-
 	Comment_HTMLStartTag = C.CXComment_HTMLStartTag
 	// Comment_HTMLEndTag hTML end tag. Considered inline content.
 	//
 	// For example:
 	//  </a>
-
 	Comment_HTMLEndTag = C.CXComment_HTMLEndTag
 	// Comment_Paragraph a paragraph, contains inline comment. The paragraph itself is block content.
 	Comment_Paragraph = C.CXComment_Paragraph
@@ -43,15 +41,15 @@ const (
 	// AST nodes of special kinds that parser knows about (e. g., \\param
 	// command) have their own node kinds.
 	Comment_BlockCommand = C.CXComment_BlockCommand
-	// Comment_ParamCommand a \Parameter or \\arg command that describes the function parameter
+	// Comment_ParamCommand a parameter or arg command that describes the function parameter
 	// (name, passing direction, description).
 	//
-	// For example: \Parameter [in] ParamName description.
+	// For example: parameter [in] ParamName description.
 	Comment_ParamCommand = C.CXComment_ParamCommand
-	// Comment_TParamCommand a \\tparam command that describes a template parameter (name and
+	// Comment_TParamCommand a template param command that describes a template parameter (name and
 	// description).
 	//
-	// For example: \\tparam T description.
+	// For example: template param T description.
 	Comment_TParamCommand = C.CXComment_TParamCommand
 	// Comment_VerbatimBlockCommand a verbatim block command (e. g., preformatted code). Verbatim
 	// block has an opening and a closing command and contains multiple lines of
@@ -59,7 +57,6 @@ const (
 	//
 	// For example:
 	//  aaa
-
 	Comment_VerbatimBlockCommand = C.CXComment_VerbatimBlockCommand
 	// Comment_VerbatimBlockLine a line of text that is contained within a CXComment_VerbatimBlockCommand node.
 	Comment_VerbatimBlockLine = C.CXComment_VerbatimBlockLine

@@ -26,7 +26,7 @@ type CodeCompleteResults struct {
 //
 // Parameter completion_index The index of the completion
 //
-// \return The number of fix-its which must be applied before the completion at
+// Return The number of fix-its which must be applied before the completion at
 // completion_index can be applied
 func (ccr *CodeCompleteResults) CompletionNumFixIts(completionIndex uint32) uint32 {
 	return uint32(C.clang_getCompletionNumFixIts(ccr.c, C.uint(completionIndex)))

@@ -113,10 +113,10 @@ func (i Index) SetInvocationEmissionPathOption(path string) {
 // associated.
 //
 // Parameter source_filename The name of the source file to load, or NULL if the
-// source file is included in \p clang_command_line_args.
+// source file is included in clang_command_line_args.
 //
 // Parameter num_clang_command_line_args The number of command-line arguments in
-// \p clang_command_line_args.
+// clang_command_line_args.
 //
 // Parameter clang_command_line_args The command-line arguments that would be
 // passed to the clang executable if it were being invoked out-of-process.

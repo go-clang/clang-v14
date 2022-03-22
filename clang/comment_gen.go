@@ -325,24 +325,24 @@ func (c Comment) HTMLTagComment_getAsString() string {
 // this HTML back into an AST, use other APIs instead.
 //
 // Currently the following CSS classes are used:
-// \li "para-brief" for \paragraph and equivalent commands;
-// \li "para-returns" for \Returns paragraph and equivalent commands;
-// \li "word-returns" for the "Returns" word in \Returns paragraph.
+// The "para-brief" for paragraph and equivalent commands;
+// The "para-returns" for returns paragraph and equivalent commands;
+// The "word-returns" for the "Returns" word in returns paragraph.
 //
 // Function argument documentation is rendered as a \<dl\> list with arguments
 // sorted in function prototype order. CSS classes used:
-// \li "param-name-index-NUMBER" for parameter name (\<dt\>);
-// \li "param-descr-index-NUMBER" for parameter description (\<dd\>);
-// \li "param-name-index-invalid" and "param-descr-index-invalid" are used if
+// The "param-name-index-NUMBER" for parameter name (\<dt\>);
+// The "param-descr-index-NUMBER" for parameter description (\<dd\>);
+// The "param-name-index-invalid" and "param-descr-index-invalid" are used if
 // parameter index is invalid.
 //
 // Template parameter documentation is rendered as a \<dl\> list with
 // parameters sorted in template parameter list order. CSS classes used:
-// \li "tparam-name-index-NUMBER" for parameter name (\<dt\>);
-// \li "tparam-descr-index-NUMBER" for parameter description (\<dd\>);
-// \li "tparam-name-index-other" and "tparam-descr-index-other" are used for
+// The "tparam-name-index-NUMBER" for parameter name (\<dt\>);
+// The "tparam-descr-index-NUMBER" for parameter description (\<dd\>);
+// The "tparam-name-index-other" and "tparam-descr-index-other" are used for
 // names inside template template parameters;
-// \li "tparam-name-index-invalid" and "tparam-descr-index-invalid" are used if
+// The "tparam-name-index-invalid" and "tparam-descr-index-invalid" are used if
 // parameter position is invalid.
 //
 // Parameter Comment a CXComment_FullComment AST node.

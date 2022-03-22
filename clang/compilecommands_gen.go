@@ -27,7 +27,7 @@ func (cc CompileCommands) Size() uint32 {
 
 // Command get the I'th CompileCommand for a file
 //
-// Note : 0 <= i < clang_CompileCommands_getSize(CXCompileCommands)
+// NOTE: 0 <= i < clang_CompileCommands_getSize(CXCompileCommands)
 func (cc CompileCommands) Command(i uint32) CompileCommand {
 	return CompileCommand{C.clang_CompileCommands_getCommand(cc.c, C.uint(i))}
 }

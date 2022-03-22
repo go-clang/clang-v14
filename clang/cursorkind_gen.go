@@ -275,7 +275,6 @@ const (
 	//
 	// Example:
 	//  x = int(0.5);
-
 	Cursor_CXXFunctionalCastExpr = C.CXCursor_CXXFunctionalCastExpr
 	// Cursor_CXXTypeidExpr a C++ typeid expression (C++ [expr.typeid]).
 	Cursor_CXXTypeidExpr = C.CXCursor_CXXTypeidExpr
@@ -308,7 +307,6 @@ const (
 	// Objective-C pointers and C pointers, transferring ownership in the process.
 	//
 	//  NSString *str = (__bridge_transfer NSString *)CFCreateString();
-
 	Cursor_ObjCBridgedCastExpr = C.CXCursor_ObjCBridgedCastExpr
 	// Cursor_PackExpansionExpr represents a C++0x pack expansion that produces a sequence of
 	// expressions.
@@ -320,7 +318,6 @@ const (
 	//  void forward(F f, Types &&...args) {
 	//  f(static_cast<Types&&>(args)...);
 	//  }
-
 	Cursor_PackExpansionExpr = C.CXCursor_PackExpansionExpr
 	// Cursor_SizeOfPackExpr represents an expression that computes the length of a parameter
 	// pack.
@@ -329,7 +326,6 @@ const (
 	//  struct count {
 	//  static const unsigned value = sizeof...(Types);
 	//  };
-
 	Cursor_SizeOfPackExpr = C.CXCursor_SizeOfPackExpr
 	Cursor_LambdaExpr     = C.CXCursor_LambdaExpr
 	// Cursor_ObjCBoolLiteralExpr objective-c Boolean Literal.
@@ -367,7 +363,6 @@ const (
 	//
 	//  start_over:
 	//  ++counter;
-
 	Cursor_LabelStmt = C.CXCursor_LabelStmt
 	// Cursor_CompoundStmt a group of statements like { stmt stmt }.
 	//
@@ -402,11 +397,11 @@ const (
 	Cursor_GCCAsmStmt = C.CXCursor_GCCAsmStmt
 	// Cursor_AsmStmt a GCC inline assembly statement extension.
 	Cursor_AsmStmt = C.CXCursor_AsmStmt
-	// Cursor_ObjCAtTryStmt objective-C's overall \@try-\@catch-\@finally statement.
+	// Cursor_ObjCAtTryStmt objective-C's overall try-catch-finallystatement.
 	Cursor_ObjCAtTryStmt = C.CXCursor_ObjCAtTryStmt
-	// Cursor_ObjCAtCatchStmt objective-C's \@catch statement.
+	// Cursor_ObjCAtCatchStmt objective-C's catch statement.
 	Cursor_ObjCAtCatchStmt = C.CXCursor_ObjCAtCatchStmt
-	// Cursor_ObjCAtFinallyStmt objective-C's \@finally statement.
+	// Cursor_ObjCAtFinallyStmt objective-C's finallystatement.
 	Cursor_ObjCAtFinallyStmt = C.CXCursor_ObjCAtFinallyStmt
 	// Cursor_ObjCAtThrowStmt objective-C's \@throw statement.
 	Cursor_ObjCAtThrowStmt = C.CXCursor_ObjCAtThrowStmt
