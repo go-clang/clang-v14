@@ -5,7 +5,7 @@
 
 Native Go bindings for Clang v14 C API.
 
-Currently, generated from [llvm@14.0.0-rc1](https://github.com/llvm/llvm-project/tree/llvmorg-14.0.0-rc1).
+Currently, generated from [llvm@14.0.0-rc4](https://github.com/llvm/llvm-project/tree/llvmorg-14.0.0-rc4).
 
 ## Install/Update
 
