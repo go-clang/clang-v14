@@ -11,7 +11,7 @@ Generated from [llvmorg-14.0.0](https://github.com/llvm/llvm-project/releases/ta
 
 ```console
 CGO_LDFLAGS="-L$(llvm-config --libdir)" \
-  go install github.com/go-clang/clang-v14@latest
+  go install github.com/go-clang/clang-v14/clang@latest
 ```
 
 ## Usage
