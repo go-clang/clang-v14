@@ -5,13 +5,13 @@
 
 Native Go bindings for Clang v14 C API.
 
-Currently, generated from [llvm@14.0.0-rc4](https://github.com/llvm/llvm-project/tree/llvmorg-14.0.0-rc4).
+Generated from [llvmorg-14.0.0](https://github.com/llvm/llvm-project/releases/tag/llvmorg-14.0.0).
 
 ## Install/Update
 
-```bash
-CGO_LDFLAGS="-L`llvm-config --libdir`" \
-  go install github.com/go-clang/clang-v14/...
+```console
+CGO_LDFLAGS="-L$(llvm-config --libdir)" \
+  go install github.com/go-clang/clang-v14@latest
 ```
 
 ## Usage
